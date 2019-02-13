@@ -1,5 +1,5 @@
 # Reading, and subsetting power consumption data
-readFile <- "C:/Users/Jezekiel Bognot/Desktop/Data Scientist Track/Assignments/Exploratory Data Analysis/Week 1/household_power_consumption.txt"
+readFile <- ".../household_power_consumption.txt"
 power <- read.table(readFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSetPower <- power[power$Date %in% c("1/2/2007","2/2/2007") ,]
 
